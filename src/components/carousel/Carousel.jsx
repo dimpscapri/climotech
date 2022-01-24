@@ -32,21 +32,21 @@ const imagesData = {
                 id: 0,
                 imgSrc: one,
                 altText: "First Image",
-                slideLabel: "First Slide",
-                slideContent: "Lorem ipsum dolor sit amet. Qui perspiciatis expedita voluptatibus esse ea rerum voluptatibus aut accusantium reprehenderit ab sapiente consequatur ut vero consectetur et beatae consequatur."
+                slideLabel: "Web Development",
+                slideContent: "A team of full stack developers who design beautiful websites using Wordpress, ReactJS, NodeJS and Python"
             },
             {
                 id: 1,
                 imgSrc: two,
                 altText: "Second Image",
-                slideLabel: "Second Slide",
+                slideLabel: "Wordpress",
                 slideContent: "Lorem ipsum dolor sit amet. Qui perspiciatis expedita voluptatibus esse ea rerum voluptatibus aut accusantium reprehenderit ab sapiente consequatur ut vero consectetur et beatae consequatur."
             },
             {
                 id: 2,
                 imgSrc: three,
                 altText: "Third Image",
-                slideLabel: "Third Slide",
+                slideLabel: "E-Commerce",
                 slideContent: "Lorem ipsum dolor sit amet. Qui perspiciatis expedita voluptatibus esse ea rerum voluptatibus aut accusantium reprehenderit ab sapiente consequatur ut vero consectetur et beatae consequatur."
             }
         ]
@@ -57,7 +57,7 @@ const Carousel = (props) => {
 
     return (
         <>
-            <div id="carouselCaptions" class="carousel  slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselCaptions" class="carousel  slide carousel-fade" data-bs-pause="hover" data-bs-ride="carousel" >
                 <div className="carousel-indicators">
                     {
                         indicatorsData.content.body.map(
