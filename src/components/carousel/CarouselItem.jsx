@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const CarouselItem = (props) => {
@@ -8,12 +8,14 @@ const CarouselItem = (props) => {
         <>
             <div className={`carousel-item ${activeIndicator}`}>
                 <img src={obj.imgSrc} className="d-block w-100" alt={obj.altText} />
-                <div className="carousel-caption d-none d-md-block">
-                    <h5>{obj.slideLabel}</h5>
-                    <p>{obj.slideContent}</p>
-                    <div className="slider-btn">
-                        <button className="btn btn-1">Our Services</button>
-                        <button className="btn btn-2">Get a Quote</button>
+                <div className="container">
+                    <div className="carousel-caption text-start">
+                        <h5>{obj.slideLabel}</h5>
+                        <p>{obj.slideContent}</p>
+                        <p className='slider-btn'>
+                            <a className="btn btn-lg btn-1" href='index.jsp'>Our Services</a>
+                            <a className="btn btn-lg btn-2" href='index.jsp'>Contact us</a>
+                        </p>
                     </div>
                 </div>
             </div>
